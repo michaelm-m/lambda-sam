@@ -4,7 +4,7 @@ Description: >
   sam-app
 
   Sample SAM Template for sam-app
-  
+
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
   Function:
@@ -17,6 +17,7 @@ Resources:
       CodeUri: hello-world/
       Handler: app.lambdaHandler
       Runtime: nodejs10.x
+      Role: arn:aws:iam::896680714358:role/ai-demo-dev-us-east-1-lambdaRole
       Events:
         HelloWorld:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
